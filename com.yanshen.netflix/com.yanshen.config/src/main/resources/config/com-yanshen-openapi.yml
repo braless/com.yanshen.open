@@ -1,0 +1,21 @@
+server:
+  port: 3104
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:3100/eureka
+spring:
+  application:
+    name: com-yanshen-openapi
+  redis:
+    database: 0
+    host: 192.168.123.47
+    port: 6379
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 10
+        max-wait: 100000
+    timeout: 5000
+yanshen:
+  ip: 127.0.0.1

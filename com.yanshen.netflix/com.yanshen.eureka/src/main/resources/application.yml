@@ -1,0 +1,9 @@
+server:
+  port: 3100
+spring:
+  application:
+    name: com.yanshen.euraka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:3100/eureka

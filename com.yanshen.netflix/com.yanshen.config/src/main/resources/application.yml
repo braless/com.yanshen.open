@@ -1,0 +1,28 @@
+server:
+  port: 3101
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:3100/eureka
+management:
+  security:
+    enabled: true
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: ["health","info","shutdown","bus-refresh"]
+spring:
+  profiles:
+    active: native
+  application:
+    name: com-yanshen-config
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config

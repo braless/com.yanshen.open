@@ -1,0 +1,25 @@
+server:
+  port: 3106
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:3100/eureka
+      healthcheck:
+        enabled: true
+yanshen:
+  ip: 127.0.0.1
+
+zuul:
+  routes:
+    api-a:
+      path: /openapi/**
+      serviceId: com-yanshen-openapi
+    api-b:
+      path: /weibo/**
+      serviceId: com-yanshen-qq
+    api-c:
+      path: /api-qq/**
+      serviceId: com-yanshen-server
+  semaphore:
+    max-semaphores: 10000
+excludeurl: api-ca

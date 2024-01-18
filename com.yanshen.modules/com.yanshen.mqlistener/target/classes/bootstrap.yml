@@ -1,0 +1,16 @@
+server:
+  port: 3104
+spring:
+  application:
+    name: com.yanshen.mqlistener
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.47:8848
+        namespace: 442ea6d7-dfe2-44bd-8d45-35d42370a89b
+      config:
+        server-addr: 192.168.1.47:8848
+        namespace: 442ea6d7-dfe2-44bd-8d45-35d42370a89b
+        group: DEFAULT_GROUP
+        file-extension: yml
+        refresh-enabled: true

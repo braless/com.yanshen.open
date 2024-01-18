@@ -1,0 +1,10 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:3100/eureka
+spring:
+  application:
+    name: com-yanshen-server
+yanshen:
+  ip: 127.0.0.1
+  name: "Webster"

@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: ${ACTIVE_ENV:dev}
+#  output:
+#    ansi:
+#      enabled: DETECT
+#data:
+#  center:
+#    id: 1
+#logging:
+#  level:
+#    root: info
+#  config: classpath:logback.xml
+#  config: classpath:logback-${spring.profiles.active}.xml
+
+
+

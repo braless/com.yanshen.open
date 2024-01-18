@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com.yanshen.clients" />
+      </profile>
+      <profile name="Annotation profile for com.yanshen.common" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="com.yanshen.mqlistener" />
+        <module name="com.yanshen.auth" />
+        <module name="messager-clients" />
+        <module name="com.yanshen.common" />
+        <module name="com.yanshen.core" />
+        <module name="com.yanshen.gateway" />
+        <module name="com.yanshen.messager" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.yanshen.author" target="1.8" />
+      <module name="com.yanshen.config" target="1.8" />
+      <module name="com.yanshen.eureka" target="1.8" />
+      <module name="com.yanshen.netflix" target="1.8" />
+      <module name="com.yanshen.zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.yanshen.auth" options="-parameters" />
+      <module name="com.yanshen.cloud" options="-parameters" />
+      <module name="com.yanshen.common" options="-parameters" />
+      <module name="com.yanshen.core" options="-parameters" />
+      <module name="com.yanshen.gateway" options="-parameters" />
+      <module name="com.yanshen.messager" options="-parameters" />
+      <module name="com.yanshen.modules" options="-parameters" />
+      <module name="com.yanshen.mqlistener" options="-parameters" />
+      <module name="com.yanshen.netflix" options="" />
+      <module name="com.yanshen.open" options="-parameters" />
+      <module name="com.yanshen.zuul" options="" />
+      <module name="messager-clients" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.yanshen.common/com.yanshen.common.iml" filepath="$PROJECT_DIR$/com.yanshen.common/com.yanshen.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.mqlistener/com.yanshen.mqlistener.iml" filepath="$PROJECT_DIR$/com.yanshen.modules/com.yanshen.mqlistener/com.yanshen.mqlistener.iml" />
+    </modules>
+  </component>
+</project>
