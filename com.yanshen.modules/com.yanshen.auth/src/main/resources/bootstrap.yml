@@ -1,18 +1,7 @@
 server:
-  port: 3101
+  port: 3001
 spring:
   application:
     name: com.yanshen.auth
-  devtools:
-    add-properties: false
-  cloud:
-    nacos:
-      discovery:
-        server-addr: ${DISCOVERY_SERVERADDR:192.168.1.47}:${DISCOVER_PORT:8848}
-        namespace: ${DISCOVERY_NAMESPACE:442ea6d7-dfe2-44bd-8d45-35d42370a89b}
-      config:
-        server-addr: ${CONFIG_SERVERADDR:192.168.1.47}:${CONFIG_PORT:8848}
-        namespace: ${CONFIG_NAMESPACE:442ea6d7-dfe2-44bd-8d45-35d42370a89b}
-        group: ${CONFIG_GROUP:DEFAULT_GROUP}
-        file-extension: yml
-        refresh-enabled: true
+  profiles:
+    active: @spring.active@
