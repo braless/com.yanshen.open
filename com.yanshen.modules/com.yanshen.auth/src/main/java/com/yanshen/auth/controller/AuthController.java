@@ -4,6 +4,7 @@ import com.yanshen.common.core.response.R;
 import com.yanshen.messager.api.RemoteMessagerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,8 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RequiredArgsConstructor
 public class AuthController {
-
-    private final RemoteMessagerService remoteMessagerService;
+    @Autowired
+    private RemoteMessagerService remoteMessagerService;
 
     @RequestMapping("/do")
     public R<?> auth(@RequestParam String userName, @RequestParam String password) {

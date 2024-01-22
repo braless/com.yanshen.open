@@ -15,7 +15,7 @@ public class ServiceNameConstants {
     /**
      * 认证服务的serviceid
      */
-    public static final String MESSAGER_SERVICE = "com.yanshen.message";
+    public static final String MESSAGER_SERVICE = "com.yanshen.messager";
 
     /**
      * 系统模块的serviceid

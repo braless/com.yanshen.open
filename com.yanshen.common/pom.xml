@@ -14,6 +14,7 @@
         <module>common.web</module>
         <module>common.bom</module>
         <module>common.sercurity</module>
+<!--        <module>common.loadbalancer</module>-->
     </modules>
 
     <packaging>pom</packaging>

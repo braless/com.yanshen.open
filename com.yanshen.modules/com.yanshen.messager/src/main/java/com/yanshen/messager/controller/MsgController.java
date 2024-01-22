@@ -5,6 +5,7 @@ import com.yanshen.messager.domain.Messager;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -23,8 +24,8 @@ public class MsgController {
      * @return
      */
     @RequestMapping("/send")
-    public R<?> msg(@RequestBody Messager messager){
-        log.info("接收消息成功:{}",messager);
+    public R<?> msg(@RequestParam String userName,@RequestParam String password){
+        log.info("接收消息成功:{}",userName);
         return R.ok("this is ok");
     }
 }

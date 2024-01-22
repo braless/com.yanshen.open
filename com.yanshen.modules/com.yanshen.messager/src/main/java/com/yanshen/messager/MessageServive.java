@@ -5,6 +5,7 @@ import com.yanshen.common.security.annotation.CustomFeignClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @Auther: @Yanchao
@@ -15,7 +16,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @CustomConfig
-@CustomFeignClients
+@EnableFeignClients
 public class MessageServive {
 
     public static void main(String[] args) {

@@ -29,7 +29,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-cloud.version>2020.0.4</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
         <spring-data-redis>2.2.10.RELEASE</spring-data-redis>
         <xxl-job-core.version>2.2.0</xxl-job-core.version>
         <knife4j-spring-boot-starter.version>2.0.9</knife4j-spring-boot-starter.version>
@@ -115,6 +115,7 @@
         <cloud-commons.version>3.0.4</cloud-commons.version>
         <hutool.version>5.8.21</hutool.version>
         <dynamic-ds.version>3.5.0</dynamic-ds.version>
+        <fastjson2.version>2.0.25</fastjson2.version>
     </properties>
     <!-- 依赖声明 -->
     <dependencyManagement>
@@ -344,7 +345,17 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
             </dependency>
-
+            <!-- JSON 解析器和生成器 -->
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2-extension-spring5</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
         </dependencies>
 
     </dependencyManagement>

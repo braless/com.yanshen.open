@@ -37,6 +37,11 @@
                 <artifactId>messager-clients</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <dependency>
+                <groupId>com.yanshen</groupId>
+                <artifactId>common.loadbalancer</artifactId>
+                <version>${revision}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

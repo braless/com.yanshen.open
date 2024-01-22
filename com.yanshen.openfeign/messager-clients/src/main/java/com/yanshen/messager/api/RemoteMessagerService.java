@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Location: com.yanshen.auth.api
  * @Project: com.yanshen.open
  */
-@FeignClient(contextId = "RemoteMessagerService", value = ServiceNameConstants.MESSAGER_SERVICE, fallbackFactory = MessagerFallbackFactory.class)
+@FeignClient(contextId = "remoteMessagerService", value = ServiceNameConstants.MESSAGER_SERVICE, fallbackFactory = MessagerFallbackFactory.class)
 public interface RemoteMessagerService {
 
     @RequestMapping("/msg/send")
