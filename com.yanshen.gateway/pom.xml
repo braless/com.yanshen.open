@@ -5,10 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.yanshen</groupId>
-        <artifactId>com.yanshen.modules</artifactId>
+        <artifactId>com.yanshen.open</artifactId>
         <version>${revision}</version>
     </parent>
-
     <artifactId>com.yanshen.gateway</artifactId>
 
     <properties>

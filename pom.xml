@@ -17,6 +17,7 @@
         <module>com.yanshen.modules</module>
         <module>com.yanshen.common</module>
         <module>com.yanshen.openfeign</module>
+        <module>com.yanshen.gateway</module>
         <!--        <module>com.yanshen.netflix</module>-->
     </modules>
 
