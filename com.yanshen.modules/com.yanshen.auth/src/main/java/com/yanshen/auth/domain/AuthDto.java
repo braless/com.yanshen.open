@@ -12,6 +12,7 @@ import lombok.Data;
 @Data
 public class AuthDto {
 
+    private Long id;
     private String uerName;
     public String password;
 }

@@ -1,6 +1,8 @@
 package com.yanshen.auth.controller;
 
-import com.yanshen.core.response.R;
+import com.yanshen.common.core.response.R;
+import com.yanshen.messager.api.RemoteMessagerService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,12 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/sys/auth")
 @Slf4j
+@RequiredArgsConstructor
 public class AuthController {
 
+    private final RemoteMessagerService remoteMessagerService;
 
     @RequestMapping("/do")
     public R<?> auth(@RequestParam String userName, @RequestParam String password) {
-        log.info("尝试登录:{},{}",userName,password);
+        log.info("尝试登录:{},{}", userName, password);
+        remoteMessagerService.sendMessage(userName, password);
         return R.ok("this is ok");
     }
 }

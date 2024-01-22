@@ -1,6 +1,6 @@
 package com.yanshen.messager.controller;
 
-import com.yanshen.core.response.R;
+import com.yanshen.common.core.response.R;
 import com.yanshen.messager.domain.Messager;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,0 +1,7 @@
+server:
+  port: 3102
+spring:
+  application:
+    name: com.yanshen.messager
+  profiles:
+    active: @spring.active@

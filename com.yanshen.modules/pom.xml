@@ -13,10 +13,10 @@
         <module>com.yanshen.mqlistener</module>
         <module>com.yanshen.gateway</module>
         <module>com.yanshen.messager</module>
-        <module>com.yanshen.core</module>
-        <module>com.yanshen.clients</module>
-        <module>com.yanshen.clients/messager-clients</module>
+        <module>com.yanshen.hotel</module>
     </modules>
+
+
     <artifactId>com.yanshen.modules</artifactId>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

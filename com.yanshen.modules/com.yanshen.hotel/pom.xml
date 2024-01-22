@@ -6,47 +6,27 @@
     <parent>
         <groupId>com.yanshen</groupId>
         <artifactId>com.yanshen.modules</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0</version>
     </parent>
 
-    <artifactId>com.yanshen.auth</artifactId>
+    <artifactId>com.yanshen.hotel</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
         <!-- SpringCloud Alibaba Nacos Config -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-        <!-- Mysql Connector -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-
         <dependency>
             <groupId>com.yanshen</groupId>
             <artifactId>common.web</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.yanshen</groupId>
-            <artifactId>messager-clients</artifactId>
-
-        </dependency>
-        <dependency>
-            <groupId>com.yanshen</groupId>
-            <artifactId>common.sercurity</artifactId>
-        </dependency>
     </dependencies>
-
-
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>

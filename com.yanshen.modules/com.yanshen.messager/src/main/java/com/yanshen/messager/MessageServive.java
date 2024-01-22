@@ -1,4 +1,4 @@
-package com.yanshen.auth;
+package com.yanshen.messager;
 
 import com.yanshen.common.security.annotation.CustomConfig;
 import com.yanshen.common.security.annotation.CustomFeignClients;
@@ -8,17 +8,17 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 /**
  * @Auther: @Yanchao
- * @Date: 2024-01-18 13:25
+ * @Date: 2024-01-19 10:52
  * @Description:
- * @Location: com.yanshen
- * @Project: Default (Template) Project
+ * @Location: PACKAGE_NAME
+ * @Project: com.yanshen.open
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @CustomConfig
 @CustomFeignClients
-public class AuthService {
+public class MessageServive {
+
     public static void main(String[] args) {
-        SpringApplication.run(AuthService.class, args);
-        System.out.println("Hello world!");
+        SpringApplication.run(MessageServive.class, args);
     }
 }
