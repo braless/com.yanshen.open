@@ -1,26 +1,12 @@
 server:
-  port: 3100
+  port: 3000
 spring:
   application:
     name: com.yanshen.gateway
-  devtools:
-    add-properties: false
-  cloud:
-    nacos:
-      discovery:
-        server-addr: ${DISCOVERY_SERVERADDR:192.168.1.47}:${DISCOVER_PORT:8848}
-        namespace: ${DISCOVERY_NAMESPACE:442ea6d7-dfe2-44bd-8d45-35d42370a89b}
-      config:
-        server-addr: ${CONFIG_SERVERADDR:192.168.1.47}:${CONFIG_PORT:8848}
-        namespace: ${CONFIG_NAMESPACE:442ea6d7-dfe2-44bd-8d45-35d42370a89b}
-        group: ${CONFIG_GROUP:DEFAULT_GROUP}
-        file-extension: yml
-        refresh-enabled: true
-#        shared-configs:
-#          - dataId: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
-#            group: JAVA_COMMON_GROUP
-#        extension-configs:
-#          - dataId: xrw-base-redis.yml
-#            group: JAVA_BASE_GROUP
-#          - dataId: xrw-cloud-sentinel-gateway.yaml
-#            group: JAVA_COMMON_GROUP
+  profiles:
+    # 环境配置 dev uat prod
+    active: @spring.active@
+  # redis防重提交
+redis:
+  repeat:
+    lock: NO_REPEAT_LOCK_PREFIX
