@@ -25,10 +25,4 @@ public class AuthService {
         SpringApplication.run(AuthService.class, args);
         System.out.println("Hello world!");
     }
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate(){
-        return new RestTemplate();
-    }
-
 }

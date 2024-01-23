@@ -3,9 +3,15 @@ package com.yanshen.common.core.constants;
 /**
  * 缓存常量信息
  *
- * @author zksk
+ * @author Yanshen
  */
 public class CacheConstants {
+
+    /**
+     * 登录失败
+     */
+    public final static String LOGIN_FAIL="LOGIN_FAIL";
+    public final static String AUTH_CLIENT="auth_client:";
     /**
      * 缓存有效期，默认720（分钟）
      */

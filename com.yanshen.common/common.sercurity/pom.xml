@@ -21,6 +21,18 @@
             <groupId>com.yanshen</groupId>
             <artifactId>common.core</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.yanshen</groupId>
+            <artifactId>common.redis</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.yanshen</groupId>
+            <artifactId>admin-clients</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>

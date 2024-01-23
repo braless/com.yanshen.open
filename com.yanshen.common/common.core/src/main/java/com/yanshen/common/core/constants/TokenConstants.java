@@ -3,7 +3,7 @@ package com.yanshen.common.core.constants;
 /**
  * Token的Key常量
  *
- * @author zksk
+ * @author Yanshen
  */
 public class TokenConstants {
     /**

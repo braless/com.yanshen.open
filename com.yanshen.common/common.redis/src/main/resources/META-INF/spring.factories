@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.yanshen.common.redis.service.RedisService,\
+  com.yanshen.common.redis.configure.RedisConfig,\
+  com.yanshen.common.redis.component.NoRepeatSubmitAspect

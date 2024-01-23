@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.yanshen</groupId>
-        <artifactId>com.yanshen.modules</artifactId>
+        <artifactId>com.yanshen.openfeign</artifactId>
         <version>${revision}</version>
-        <relativePath>../../com.yanshen.modules/pom.xml</relativePath>
     </parent>
 
     <artifactId>messager-clients</artifactId>

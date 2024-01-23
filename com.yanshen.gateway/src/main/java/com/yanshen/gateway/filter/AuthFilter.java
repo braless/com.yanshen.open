@@ -1,4 +1,4 @@
-package com.yanshen.filter;
+package com.yanshen.gateway.filter;
 
 
 import com.yanshen.common.core.constants.CacheConstants;
@@ -7,7 +7,8 @@ import com.yanshen.common.core.constants.TokenConstants;
 import com.yanshen.common.core.util.JwtUtils;
 import com.yanshen.common.core.util.ServletUtils;
 import com.yanshen.common.core.util.StringUtils;
-import com.yanshen.properties.IgnoreWhiteProperties;
+
+import com.yanshen.gateway.config.properties.IgnoreWhiteProperties;
 import io.jsonwebtoken.Claims;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +26,7 @@ import com.yanshen.common.redis.service.RedisService;
 /**
  * 网关鉴权
  *
- * @author zksk
+ * @author Yanshen
  */
 @Component
 public class AuthFilter implements GlobalFilter, Ordered {

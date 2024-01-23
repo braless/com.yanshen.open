@@ -47,11 +47,14 @@
             <groupId>com.yanshen</groupId>
             <artifactId>common.web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.yanshen</groupId>
+            <artifactId>common.redis</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.yanshen</groupId>
             <artifactId>messager-clients</artifactId>
-
         </dependency>
         <dependency>
             <groupId>com.yanshen</groupId>

@@ -3,7 +3,7 @@ package com.yanshen.common.core.constants;
 /**
  * 服务名称
  *
- * @author zksk
+ * @author Yanshen
  */
 public class ServiceNameConstants {
 

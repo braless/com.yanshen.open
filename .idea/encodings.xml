@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.bom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.bom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.core/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.loadbalancer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.loadbalancer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.loadbalancer/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.redis/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.sercurity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.sercurity/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.sercurity/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.web/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.gateway/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.auth/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/auth-clients/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/auth-clients/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/auth-clients/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/messager-clients/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/messager-clients/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/messager-clients/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.hotel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.hotel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.hotel/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.messager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.messager/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.messager/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.mqlistener/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.mqlistener/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.mqlistener/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/admin-clients/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/admin-clients/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/admin-clients/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/auth-clients/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/auth-clients/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/auth-clients/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/messager-clients/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/messager-clients/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/messager-clients/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.openfeign/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp" charset="UTF-8" />
+  </component>
+</project>

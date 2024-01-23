@@ -9,3 +9,4 @@ spring:
   profiles:
     # 环境配置 dev uat prod
     active: @spring.active@
+

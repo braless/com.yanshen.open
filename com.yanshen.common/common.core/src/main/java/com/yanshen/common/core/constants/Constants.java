@@ -3,7 +3,7 @@ package com.yanshen.common.core.constants;
 /**
  * 通用常量信息
  *
- * @author zksk
+ * @author Yanshen
  */
 public class Constants {
     /**

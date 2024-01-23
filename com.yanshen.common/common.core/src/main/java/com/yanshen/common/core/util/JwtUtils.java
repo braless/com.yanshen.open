@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * Jwt工具类
  *
- * @author zksk
+ * @author Yanshen
  */
 public class JwtUtils {
     public static String secret = TokenConstants.SECRET;

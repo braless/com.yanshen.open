@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 /**
  * 权限相关通用常量
  *
- * @author zksk
+ * @author Yanshen
  */
 public class SecurityConstants {
     /**

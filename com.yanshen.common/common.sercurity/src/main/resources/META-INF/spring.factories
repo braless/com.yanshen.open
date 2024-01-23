@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.yanshen.common.security.service.TokenService,\
+    com.yanshen.common.security.handler.GlobalExceptionHandler
+
+
