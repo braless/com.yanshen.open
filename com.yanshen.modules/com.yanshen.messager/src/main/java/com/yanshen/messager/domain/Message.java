@@ -2,6 +2,9 @@ package com.yanshen.messager.domain;
 
 import lombok.Data;
 
+import java.io.Serializable;
+import java.time.LocalDateTime;
+
 /**
  * @Auther: @Yanchao
  * @Date: 2024-01-18 15:57
@@ -10,11 +13,10 @@ import lombok.Data;
  * @Project: com.yanshen.open
  */
 @Data
-public class Messager {
+public class Message implements Serializable {
 
+    private Long id;
     private String senderName;
-
     public String sendUrl;
-
-    public String sendTime;
+    public LocalDateTime sendTime;
 }

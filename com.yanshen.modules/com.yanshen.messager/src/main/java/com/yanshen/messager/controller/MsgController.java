@@ -1,11 +1,17 @@
 package com.yanshen.messager.controller;
 
 import cn.hutool.http.HttpRequest;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yanshen.common.core.response.R;
-import com.yanshen.common.core.util.SmsClientUtil;
-import com.yanshen.messager.domain.Messager;
+import com.yanshen.common.core.web.page.PageQuery;
+import com.yanshen.messager.domain.dto.MessageDto;
+import com.yanshen.messager.domain.vo.MessageVo;
+import com.yanshen.messager.service.IMessageService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,11 +26,16 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/msg")
+@Api(tags = "消息服务")
+@RequiredArgsConstructor
 public class MsgController {
+
+    private final IMessageService messageService;
     /**
      *
      * @return
      */
+    @ApiOperation(value = "发送消息")
     @RequestMapping("/send")
     public R<?> msg(@RequestParam String userName,@RequestParam String password){
         log.info("接收消息成功:{}",userName);
@@ -33,5 +44,17 @@ public class MsgController {
         String desc="您的验证码是：123456。请不要把验证码泄露给其他人。如非本人操作，可不用理会！";
         HttpRequest.get("https://api.day.app/Y3pFpzvTtfhyaJxeAQtXGR/" + title + "/" + desc + "/?icon=https://cdn.jsdelivr.net/gh/braless/site_logo/Bittorrent.png").execute();
         return R.ok("this is ok");
+    }
+
+    /**
+     * 分页查询
+     * @param dto
+     * @param pageQuery
+     * @return
+     */
+    @ApiOperation(value = "分页查询")
+    @RequestMapping("/page")
+    public R<Page<MessageVo>> page(MessageDto dto, PageQuery pageQuery){
+        return R.ok(messageService.pageList(dto,pageQuery));
     }
 }

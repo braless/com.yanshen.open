@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Location: PACKAGE_NAME
  * @Project: com.yanshen.open
  */
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication
 @CustomConfig
 @EnableFeignClients
 public class MessageServive {

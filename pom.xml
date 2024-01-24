@@ -121,6 +121,7 @@
         <swagger.fox.version>3.0.0</swagger.fox.version>
         <knife4j.version>3.0.3</knife4j.version>
         <kaptcha.version>2.3.2</kaptcha.version>
+        <pagehelper.boot.version>1.4.0</pagehelper.boot.version>
     </properties>
     <!-- 依赖声明 -->
     <dependencyManagement>
@@ -197,6 +198,14 @@
                 <artifactId>kaptcha</artifactId>
                 <version>${kaptcha.version}</version>
             </dependency>
+
+            <!-- pagehelper 分页插件 -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.boot.version}</version>
+            </dependency>
+
             <!-- druid -->
             <dependency>
                 <groupId>com.alibaba</groupId>
