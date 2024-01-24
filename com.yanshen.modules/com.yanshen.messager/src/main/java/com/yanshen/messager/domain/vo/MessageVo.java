@@ -21,10 +21,10 @@ public class MessageVo {
     @ApiModelProperty("发送人名称")
     private String senderName;
     @ApiModelProperty("发送人id")
-    public String sendUrl;
+    private String sendUrl;
     @ApiModelProperty("发送时间")
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 
-    public LocalDateTime sendTime;
+    private LocalDateTime sendTime;
 }

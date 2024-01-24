@@ -1,11 +1,10 @@
 package com.yanshen.messager;
 
 import com.yanshen.common.security.annotation.CustomConfig;
-import com.yanshen.common.security.annotation.CustomFeignClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import springfox.documentation.oas.annotations.EnableOpenApi;
 
 /**
  * @Auther: @Yanchao
@@ -17,6 +16,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @CustomConfig
 @EnableFeignClients
+@EnableOpenApi
 public class MessageServive {
 
     public static void main(String[] args) {

@@ -9,9 +9,9 @@ import com.yanshen.messager.domain.vo.MessageVo;
 import com.yanshen.messager.service.IMessageService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/msg")
-@Api(tags = "消息服务")
+@Api(value = "用户管理接口",tags = "用户信息接口类")
 @RequiredArgsConstructor
 public class MsgController {
 
@@ -35,8 +35,7 @@ public class MsgController {
      *
      * @return
      */
-    @ApiOperation(value = "发送消息")
-    @RequestMapping("/send")
+    @GetMapping("/send")
     public R<?> msg(@RequestParam String userName,@RequestParam String password){
         log.info("接收消息成功:{}",userName);
         //SmsClientUtil.sendPush("13992608022","【研神科技】您的验证码是：123456。请不要把验证码泄露给其他人。如非本人操作，可不用理会！");
@@ -53,7 +52,7 @@ public class MsgController {
      * @return
      */
     @ApiOperation(value = "分页查询")
-    @RequestMapping("/page")
+    @GetMapping("/page")
     public R<Page<MessageVo>> page(MessageDto dto, PageQuery pageQuery){
         return R.ok(messageService.pageList(dto,pageQuery));
     }

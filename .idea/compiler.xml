@@ -13,18 +13,24 @@
           <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
           <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
         </processorPath>
-        <module name="common.redis" />
         <module name="com.yanshen.mqlistener" />
-        <module name="com.yanshen.auth" />
-        <module name="messager-clients" />
-        <module name="common.sercurity" />
-        <module name="common.web" />
         <module name="com.yanshen.hotel" />
         <module name="auth-clients" />
-        <module name="admin-clients" />
         <module name="com.yanshen.gateway" />
         <module name="common.core" />
         <module name="com.yanshen.messager" />
+        <module name="common.redis" />
+        <module name="com.yanshen.auth" />
+        <module name="common.swagger" />
+        <module name="messager-clients" />
+        <module name="common.sercurity" />
+        <module name="common.web" />
+        <module name="admin-clients" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -52,6 +58,7 @@
       <module name="common.loadbalancer" options="-parameters" />
       <module name="common.redis" options="-parameters" />
       <module name="common.sercurity" options="-parameters" />
+      <module name="common.swagger" options="-parameters" />
       <module name="common.web" options="-parameters" />
       <module name="messager-clients" options="-parameters" />
     </option>

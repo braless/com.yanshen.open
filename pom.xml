@@ -33,9 +33,6 @@
         <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
         <spring-data-redis>2.2.10.RELEASE</spring-data-redis>
         <xxl-job-core.version>2.2.0</xxl-job-core.version>
-        <knife4j-spring-boot-starter.version>2.0.9</knife4j-spring-boot-starter.version>
-        <swagger-version>2.10.5</swagger-version>
-        <knife4j-spring-ui.version>2.0.9</knife4j-spring-ui.version>
         <!-- 数据库驱动 -->
         <postgresql.version>42.2.6</postgresql.version>
         <ojdbc6.version>11.2.0.3</ojdbc6.version>
@@ -121,6 +118,7 @@
         <swagger.fox.version>3.0.0</swagger.fox.version>
         <knife4j.version>3.0.3</knife4j.version>
         <kaptcha.version>2.3.2</kaptcha.version>
+        <springfox.version>3.0.0</springfox.version>
         <pagehelper.boot.version>1.4.0</pagehelper.boot.version>
     </properties>
     <!-- 依赖声明 -->
@@ -205,6 +203,20 @@
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pagehelper.boot.version}</version>
             </dependency>
+            <!--Swagger3.0-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${springfox.version}</version>
+            </dependency>
+            <!-- knife4j 文档增强 -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <!--配置swagger3-->
+            <!--引入Knife4j的官方start包,该指南选择Spring Boot版本<3.0,开发者需要注意-->
 
             <!-- druid -->
             <dependency>

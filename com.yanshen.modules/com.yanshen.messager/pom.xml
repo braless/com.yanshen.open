@@ -48,6 +48,10 @@
             <groupId>com.yanshen</groupId>
             <artifactId>common.sercurity</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.yanshen</groupId>
+            <artifactId>common.swagger</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>

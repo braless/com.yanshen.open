@@ -22,9 +22,9 @@ public class MessageDto {
     @ApiModelProperty("发送人名称")
     private String senderName;
     @ApiModelProperty("发送人id")
-    public String sendUrl;
+    private String sendUrl;
     @ApiModelProperty("发送时间")
-    public LocalDateTime sendTime;
+    private LocalDateTime sendTime;
 
     /**
      * 请求参数

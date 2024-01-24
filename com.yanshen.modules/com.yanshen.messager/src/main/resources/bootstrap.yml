@@ -3,5 +3,8 @@ server:
 spring:
   application:
     name: com.yanshen.messager
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   profiles:
     active: @spring.active@
