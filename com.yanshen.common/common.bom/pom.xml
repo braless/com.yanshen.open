@@ -5,7 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.yanshen</groupId>
     <name>common.bom</name>
-
+    <!--什么是BOM-->
+    <!--https://www.cnblogs.com/niceshot/p/13747547.html-->
     <artifactId>common.bom</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
