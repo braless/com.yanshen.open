@@ -38,6 +38,12 @@
             <groupId>com.yanshen</groupId>
             <artifactId>common.sercurity</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.yanshen</groupId>
+            <artifactId>common.datasource.aop</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>

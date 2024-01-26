@@ -3,6 +3,7 @@ package com.yanshen.messager;
 import com.yanshen.common.security.annotation.CustomConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import springfox.documentation.oas.annotations.EnableOpenApi;
 
@@ -13,7 +14,7 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
  * @Location: PACKAGE_NAME
  * @Project: com.yanshen.open
  */
-@SpringBootApplication
+@SpringBootApplication(exclude =  {DataSourceAutoConfiguration.class})
 @CustomConfig
 @EnableFeignClients
 @EnableOpenApi

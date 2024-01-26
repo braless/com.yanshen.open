@@ -17,6 +17,7 @@
         <module>common.redis</module>
         <module>common.swagger</module>
         <module>common.datasource</module>
+        <module>common.datasource.aop</module>
         <!--        <module>common.loadbalancer</module>-->
     </modules>
 
