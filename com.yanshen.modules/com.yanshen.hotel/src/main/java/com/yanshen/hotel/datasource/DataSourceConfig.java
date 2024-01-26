@@ -1,6 +1,6 @@
 package com.yanshen.hotel.datasource;
 
-import com.yanshen.common.datasource.aop.config.DynamicDataSource;
+import com.yanshen.common.ds.config.DynamicDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;

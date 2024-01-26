@@ -1,12 +1,11 @@
 package com.yanshen.messager.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yanshen.common.core.web.page.PageQuery;
-import com.yanshen.common.datasource.config.DataSource;
-import com.yanshen.common.datasource.config.DataSourceType;
 import com.yanshen.messager.domain.Message;
 import com.yanshen.messager.domain.dto.MessageDto;
 import com.yanshen.messager.domain.vo.MessageVo;
@@ -40,7 +39,7 @@ public class IMessageServiceImpl implements IMessageService {
      * @return
      */
     @Override
-    @DataSource(DataSourceType.SLAVE)
+    @DS("slave")
     public Page<MessageVo> pageList(MessageDto messageDto, PageQuery pageQuery) {
         LambdaQueryWrapper<Message> lqw = buildQueryWrapper(messageDto);
         Page<MessageVo> page = messagerMapper.selectVoPage(pageQuery.build(), lqw);
@@ -54,7 +53,7 @@ public class IMessageServiceImpl implements IMessageService {
      * @return
      */
     @Override
-    @DataSource(DataSourceType.MASTER)
+    @DS("master")
     public List<MessageVo> queryList(MessageDto messageDto) {
         LambdaQueryWrapper<Message> lqw = buildQueryWrapper(messageDto);
         return messagerMapper.selectVoList(lqw);

@@ -1,4 +1,4 @@
-package com.yanshen.common.datasource.aop.config;
+package com.yanshen.common.ds.config;
 
 
 import java.lang.annotation.*;

@@ -1,9 +1,9 @@
-package com.yanshen.common.datasource.aop.aop;
+package com.yanshen.common.ds.config.aop;
 
 
-import com.yanshen.common.datasource.aop.config.DataSource;
-import com.yanshen.common.datasource.aop.config.DataSourceType;
-import com.yanshen.common.datasource.aop.config.DynamicDataSource;
+import com.yanshen.common.ds.config.DataSource;
+import com.yanshen.common.ds.config.DataSourceType;
+import com.yanshen.common.ds.config.DynamicDataSource;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -24,7 +24,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class DataSourceAspect {
 
-    @Around("@annotation(com.yanshen.common.datasource.aop.config.DataSource) || @within(com.yanshen.common.datasource.aop.config.DataSource)")
+    @Around("@annotation(com.yanshen.common.ds.config.DataSource) || @within(com.yanshen.common.ds.config.DataSource)")
     public Object switchDataSource(ProceedingJoinPoint point) throws Throwable {
         MethodSignature signature = (MethodSignature) point.getSignature();
         DataSource dataSource = signature.getMethod().getAnnotation(DataSource.class);

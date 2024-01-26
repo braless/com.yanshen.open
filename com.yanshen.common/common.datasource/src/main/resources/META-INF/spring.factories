@@ -1,2 +1,2 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
- com.yanshen.common.datasource.config.DataSourceConfig
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+# com.yanshen.common.datasource.config.DataSourceConfig

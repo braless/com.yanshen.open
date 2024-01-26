@@ -1,8 +1,8 @@
 package com.yanshen.hotel.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.yanshen.common.datasource.aop.config.DataSource;
-import com.yanshen.common.datasource.aop.config.DataSourceType;
+import com.yanshen.common.ds.config.DataSource;
+import com.yanshen.common.ds.config.DataSourceType;
 import com.yanshen.hotel.domain.Hotel;
 import com.yanshen.hotel.domain.vo.HotelVo;
 import com.yanshen.hotel.mapper.FindHotelMapper;
