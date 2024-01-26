@@ -23,6 +23,7 @@
                 <artifactId>common.core</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!--Web服务组件-->
             <dependency>
                 <groupId>com.yanshen</groupId>
                 <artifactId>common.web</artifactId>
@@ -33,6 +34,7 @@
                 <artifactId>common.sercurity</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!--FeignClient-->
             <dependency>
                 <groupId>com.yanshen</groupId>
                 <artifactId>messager-clients</artifactId>
@@ -43,14 +45,22 @@
                 <artifactId>common.loadbalancer</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!--Swagger-->
             <dependency>
                 <groupId>com.yanshen</groupId>
                 <artifactId>common.swagger</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!--Redis-->
             <dependency>
                 <groupId>com.yanshen</groupId>
                 <artifactId>common.redis</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!--动态数据源-->
+            <dependency>
+                <groupId>com.yanshen</groupId>
+                <artifactId>common.datasource</artifactId>
                 <version>${revision}</version>
             </dependency>
         </dependencies>

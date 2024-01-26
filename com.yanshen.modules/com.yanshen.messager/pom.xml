@@ -39,18 +39,25 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-
+        <!--启用基础web依赖-->
         <dependency>
             <groupId>com.yanshen</groupId>
             <artifactId>common.web</artifactId>
         </dependency>
+        <!--启用安全相关模块-->
         <dependency>
             <groupId>com.yanshen</groupId>
             <artifactId>common.sercurity</artifactId>
         </dependency>
+        <!--启用swagger模块-->
         <dependency>
             <groupId>com.yanshen</groupId>
             <artifactId>common.swagger</artifactId>
+        </dependency>
+        <!--启用多数据源-->
+        <dependency>
+            <groupId>com.yanshen</groupId>
+            <artifactId>common.datasource</artifactId>
         </dependency>
     </dependencies>
     <build>
