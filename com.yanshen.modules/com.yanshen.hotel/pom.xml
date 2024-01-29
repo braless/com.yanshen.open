@@ -42,7 +42,10 @@
             <groupId>com.yanshen</groupId>
             <artifactId>common.datasource.aop</artifactId>
             <version>1.0.0</version>
-            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.yanshen</groupId>
+            <artifactId>common.log</artifactId>
         </dependency>
     </dependencies>
     <build>
