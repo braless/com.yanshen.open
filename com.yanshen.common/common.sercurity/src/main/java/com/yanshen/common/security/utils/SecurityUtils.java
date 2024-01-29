@@ -1,18 +1,12 @@
 package com.yanshen.common.security.utils;
-
-import com.yanshen.admin.clients.model.LoginUser;
 import com.yanshen.common.core.constants.SecurityConstants;
-
-
 import com.yanshen.common.core.constants.TokenConstants;
-
 import com.yanshen.common.core.context.SecurityContextHolder;
-
 import com.yanshen.common.core.text.Convert;
 import com.yanshen.common.core.util.ServletUtils;
 import com.yanshen.common.core.util.StringUtils;
+import com.yanshen.common.security.domain.LoginUser;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
 import javax.servlet.http.HttpServletRequest;
 
 /**

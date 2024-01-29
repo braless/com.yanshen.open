@@ -14,12 +14,15 @@
           <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
         </processorPath>
         <module name="com.yanshen.mqlistener" />
+        <module name="common.datasource.aop" />
+        <module name="common.log" />
         <module name="com.yanshen.hotel" />
         <module name="auth-clients" />
         <module name="com.yanshen.gateway" />
         <module name="common.core" />
         <module name="com.yanshen.messager" />
         <module name="common.redis" />
+        <module name="common.datasource" />
         <module name="com.yanshen.auth" />
         <module name="common.swagger" />
         <module name="messager-clients" />
@@ -34,6 +37,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aop" target="1.8" />
       <module name="com.yanshen.clients" target="1.8" />
       <module name="com.yanshen.loadbalancer" target="1.8" />
       <module name="common.loadbalancer" target="1.8" />
@@ -42,6 +46,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin-clients" options="-parameters" />
+      <module name="aop" options="-parameters" />
       <module name="auth-clients" options="-parameters" />
       <module name="com.yanshen.auth" options="-parameters" />
       <module name="com.yanshen.clients" options="-parameters" />
@@ -55,7 +60,10 @@
       <module name="com.yanshen.open" options="-parameters" />
       <module name="com.yanshen.openfeign" options="-parameters" />
       <module name="common.core" options="-parameters" />
+      <module name="common.datasource" options="-parameters" />
+      <module name="common.datasource.aop" options="-parameters" />
       <module name="common.loadbalancer" options="-parameters" />
+      <module name="common.log" options="-parameters" />
       <module name="common.redis" options="-parameters" />
       <module name="common.sercurity" options="-parameters" />
       <module name="common.swagger" options="-parameters" />

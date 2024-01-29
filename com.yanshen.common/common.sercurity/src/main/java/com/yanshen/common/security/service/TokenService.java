@@ -1,10 +1,10 @@
 package com.yanshen.common.security.service;
 
-import com.yanshen.admin.clients.model.LoginUser;
 import com.yanshen.common.core.constants.CacheConstants;
 import com.yanshen.common.core.constants.SecurityConstants;
 import com.yanshen.common.core.util.*;
 import com.yanshen.common.redis.service.RedisService;
+import com.yanshen.common.security.domain.LoginUser;
 import com.yanshen.common.security.utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -44,10 +44,10 @@ public class TokenService {
         String operatorId = null;
 
         //系统用户
-        if (loginUser.getSysUser() != null) {
-            userId = loginUser.getSysUser().getUserId().toString();
-            userName = loginUser.getSysUser().getUserName();
-        }
+//        if (loginUser.getSysUser() != null) {
+//            userId = loginUser.getSysUser().getUserId().toString();
+//            userName = loginUser.getSysUser().getUserName();
+//        }
 
 /*
         //门户用户

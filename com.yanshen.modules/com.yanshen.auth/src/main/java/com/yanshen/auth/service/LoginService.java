@@ -3,20 +3,17 @@ package com.yanshen.auth.service;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson2.JSON;
-import com.yanshen.admin.clients.model.LoginUser;
 import com.yanshen.auth.domain.BackendBody;
 import com.yanshen.auth.domain.OauthClientInfo;
 import com.yanshen.common.core.constants.CacheConstants;
-import com.yanshen.common.core.constants.Constants;
 import com.yanshen.common.core.constants.SecurityConstants;
 import com.yanshen.common.core.exception.ServiceException;
 import com.yanshen.common.core.util.StringUtils;
 import com.yanshen.common.redis.service.RedisService;
+import com.yanshen.common.security.domain.LoginUser;
 import com.yanshen.common.security.utils.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * @Auther: @Yanchao

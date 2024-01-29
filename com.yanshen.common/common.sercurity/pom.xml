@@ -24,14 +24,11 @@
         <dependency>
             <groupId>com.yanshen</groupId>
             <artifactId>common.redis</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
         </dependency>
+        <!-- Spring Web -->
         <dependency>
-            <groupId>com.yanshen</groupId>
-            <artifactId>admin-clients</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
         </dependency>
     </dependencies>
 

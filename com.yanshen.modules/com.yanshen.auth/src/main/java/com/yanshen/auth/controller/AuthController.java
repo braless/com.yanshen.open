@@ -1,9 +1,9 @@
 package com.yanshen.auth.controller;
 
-import com.yanshen.admin.clients.model.LoginUser;
 import com.yanshen.auth.domain.BackendBody;
 import com.yanshen.auth.service.LoginService;
 import com.yanshen.common.core.response.R;
+import com.yanshen.common.security.domain.LoginUser;
 import com.yanshen.common.security.service.TokenService;
 import com.yanshen.messager.api.RemoteMessagerService;
 import lombok.RequiredArgsConstructor;
