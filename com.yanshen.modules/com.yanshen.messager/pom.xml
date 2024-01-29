@@ -47,7 +47,7 @@
         <!--启用安全相关模块-->
         <dependency>
             <groupId>com.yanshen</groupId>
-            <artifactId>common.sercurity</artifactId>
+            <artifactId>common.security</artifactId>
         </dependency>
         <!--启用swagger模块-->
         <dependency>

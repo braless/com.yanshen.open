@@ -13,7 +13,7 @@
         <module>common.core</module>
         <module>common.web</module>
         <module>common.bom</module>
-        <module>common.sercurity</module>
+        <module>common.security</module>
         <module>common.redis</module>
         <module>common.swagger</module>
         <module>common.datasource</module>

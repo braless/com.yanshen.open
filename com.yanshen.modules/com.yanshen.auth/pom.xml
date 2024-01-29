@@ -58,7 +58,7 @@
         </dependency>
         <dependency>
             <groupId>com.yanshen</groupId>
-            <artifactId>common.sercurity</artifactId>
+            <artifactId>common.security</artifactId>
         </dependency>
     </dependencies>
 

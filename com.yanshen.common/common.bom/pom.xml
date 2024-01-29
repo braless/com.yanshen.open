@@ -31,7 +31,7 @@
             </dependency>
             <dependency>
                 <groupId>com.yanshen</groupId>
-                <artifactId>common.sercurity</artifactId>
+                <artifactId>common.security</artifactId>
                 <version>${revision}</version>
             </dependency>
             <!--FeignClient-->

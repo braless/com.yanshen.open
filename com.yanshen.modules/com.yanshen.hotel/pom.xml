@@ -34,10 +34,10 @@
             <groupId>com.yanshen</groupId>
             <artifactId>common.swagger</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.yanshen</groupId>
-            <artifactId>common.sercurity</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.yanshen</groupId>-->
+<!--            <artifactId>common.sercurity</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.yanshen</groupId>
             <artifactId>common.datasource.aop</artifactId>
