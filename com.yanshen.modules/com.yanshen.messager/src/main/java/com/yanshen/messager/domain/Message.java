@@ -16,7 +16,11 @@ import java.time.LocalDateTime;
 public class Message implements Serializable {
 
     private Long id;
+    private String sender;
+    private Long userId;
     private String senderName;
     public String sendUrl;
+
+    public String content;
     public LocalDateTime sendTime;
 }

@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.yanshen.common.core.config.MybatisPlusConfig
+    com.yanshen.common.core.config.MybatisPlusConfig,\
+    com.yanshen.common.core.util.SpringUtils

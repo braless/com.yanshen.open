@@ -22,7 +22,11 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-
+        <!-- 引入websocket -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
         <!-- SpringCloud Alibaba Sentinel -->
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba.cloud</groupId>-->
@@ -39,11 +43,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <!--启用基础web依赖-->
-        <dependency>
-            <groupId>com.yanshen</groupId>
-            <artifactId>common.web</artifactId>
-        </dependency>
+
         <!--启用安全相关模块-->
         <dependency>
             <groupId>com.yanshen</groupId>
@@ -58,6 +58,10 @@
         <dependency>
             <groupId>com.yanshen</groupId>
             <artifactId>common.datasource</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yanshen</groupId>
+            <artifactId>common.core</artifactId>
         </dependency>
     </dependencies>
     <build>

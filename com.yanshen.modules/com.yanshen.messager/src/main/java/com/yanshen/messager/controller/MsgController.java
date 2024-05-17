@@ -1,9 +1,12 @@
 package com.yanshen.messager.controller;
 
 import cn.hutool.http.HttpRequest;
+import com.alibaba.fastjson2.JSON;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yanshen.common.core.response.R;
 import com.yanshen.common.core.web.page.PageQuery;
+import com.yanshen.common.redis.service.RedisService;
+import com.yanshen.messager.domain.Message;
 import com.yanshen.messager.domain.dto.MessageDto;
 import com.yanshen.messager.domain.vo.MessageVo;
 import com.yanshen.messager.service.IMessageService;
@@ -11,10 +14,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Auther: @Yanchao
@@ -31,6 +31,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class MsgController {
 
     private final IMessageService messageService;
+
+    private final RedisService redisService;
     /**
      *
      * @return
@@ -55,5 +57,12 @@ public class MsgController {
     @GetMapping("/page")
     public R<Page<MessageVo>> page(MessageDto dto, PageQuery pageQuery){
         return R.ok(messageService.pageList(dto,pageQuery));
+    }
+
+    @PostMapping("/sendMsg")
+    private R sendMessage(@RequestBody Message message){
+        redisService.publish("TOPIC" + message.getUserId(), JSON.toJSONString(message));
+        log.info("发送消息成功:{}",message);
+        return R.ok();
     }
 }
