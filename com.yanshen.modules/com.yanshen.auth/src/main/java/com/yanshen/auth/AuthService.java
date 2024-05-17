@@ -18,7 +18,6 @@ import org.springframework.web.client.RestTemplate;
  * @Project: Default (Template) Project
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@CustomConfig
 @CustomFeignClients
 public class AuthService {
     public static void main(String[] args) {
