@@ -20,6 +20,7 @@ import com.yanshen.common.core.web.domain.AjaxResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -102,6 +103,17 @@ public class GlobalExceptionHandler {
         log.error("请求地址'{}',发生未知异常.", requestURI, e);
         WebhookUtils.textMsg(webhookUrl, StrUtil.format("请求地址'{}',异常信息{},发生未知异常\n{}", requestURI, e.getMessage(), e.getStackTrace()), null, phoneMode);
         return AjaxResult.error(e.getMessage());
+    }
+
+    /**
+     * 拦截未知的运行时异常
+     */
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public AjaxResult handleRuntimeException(HttpMessageNotReadableException e, HttpServletRequest request) {
+        String requestURI = request.getRequestURI();
+        log.error("请求地址'{}',发生未知异常.", requestURI, e);
+        WebhookUtils.textMsg(webhookUrl, StrUtil.format("请求地址'{}',异常信息{},发生未知异常\n{}", requestURI, e.getMessage(), e.getStackTrace()), null, phoneMode);
+        return AjaxResult.error(e.getMessage().split(":")[0]);
     }
 
     /**
