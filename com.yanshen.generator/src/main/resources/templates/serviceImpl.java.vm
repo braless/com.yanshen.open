@@ -1,0 +1,23 @@
+package com.yanshen.${package.ServiceImpl};
+
+import com.yanshen.${package.Entity}.${entity};
+import com.yanshen.${package.Mapper}.${table.mapperName};
+import com.yanshen.${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import org.springframework.stereotype.Service;
+
+/**
+ * @auther ${author}
+ * @create ${date}
+ * @describe $!{table.comment}服务实现类
+ */
+@Service
+#if(${kotlin})
+open class ${table.serviceImplName} : ${superServiceImplClass}<${table.mapperName}, ${entity}>(), ${table.serviceName} {
+
+}
+#else
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+}
+#end

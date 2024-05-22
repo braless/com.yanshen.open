@@ -1,0 +1,60 @@
+package com.yanshen.${package.Entity};
+#foreach($pkg in ${table.importPackages})
+import ${pkg};
+#end
+import com.baomidou.mybatisplus.annotation.*;
+#if(${swagger2})
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import com.fasterxml.jackson.annotation.JsonInclude;
+#end
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+#if(${entityLombokModel})
+import lombok.Data;
+#end
+
+
+/**
+ * @Package: ${package.Entity}
+ * @Author ${author}
+ * @CreateDate ${date}
+ * @describe $!{table.comment}实体类
+ */
+#if(${entityLombokModel})
+@Data
+#end
+@TableName("${table.name}")
+#if(${swagger2})
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@ApiModel(value="${entity}对象", description="$!{table.comment}")
+#end
+@ApiModel(value="${entity}对象", description="$!{table.comment}")
+#if(${superEntityClass})
+public class ${entity} extends ${superEntityClass}#if(${activeRecord})<${entity}>#end {
+#elseif(${activeRecord})
+public class ${entity} extends Model<${entity}> {
+#else
+    public class ${entity} implements Serializable {
+#end
+
+    private static final long serialVersionUID = 1L;
+
+## ----------  BEGIN 字段循环遍历  ----------
+#foreach($field in ${table.fields})
+    #if(${field.keyFlag})
+        #set($keyPropertyName=${field.propertyName})
+    #end
+    #if("$!field.comment" != "")
+##    @ApiModelProperty(value = "${field.comment}")
+    #end
+
+    /**
+    * ${field.comment}
+    */
+    @ApiModelProperty(value = "${field.comment}")
+    private ${field.propertyType} ${field.propertyName};
+
+#end
+
+}
