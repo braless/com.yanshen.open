@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/com.yanshen.openfeign/auth-clients/pom.xml" />
         <option value="$PROJECT_DIR$/com.yanshen.gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/com.cloud.generator/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
