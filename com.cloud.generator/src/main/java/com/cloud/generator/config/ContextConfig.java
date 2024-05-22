@@ -1,4 +1,4 @@
-package com.zksk.generator.config;
+package com.cloud.generator.config;
 
 import java.util.Map;
 
@@ -30,7 +30,7 @@ public class ContextConfig {
     /**
      * 项目前缀
      */
-    private String projectPrefix="zksk-boot";
+    private String projectPrefix="yanshen-boot";
 
     /**
      * 项目空间路径
@@ -45,7 +45,7 @@ public class ContextConfig {
     /**
      * 作者名称
      */
-    private String author="zksk";
+    private String author="yanshen";
 
     /**
      * 表前缀
@@ -87,7 +87,7 @@ public class ContextConfig {
     /**
      * 自定义集成父类-实体对象
      */
-    private String superEntityClass="com.zksk.common.interceptor.BaseEntity";
+    private String superEntityClass="com.yanshen.common.interceptor.BaseEntity";
 
     /**
      * 自定义继承父类-controller

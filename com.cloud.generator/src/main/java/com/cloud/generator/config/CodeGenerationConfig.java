@@ -1,4 +1,4 @@
-package com.zksk.generator.config;
+package com.cloud.generator.config;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -75,9 +75,9 @@ public class CodeGenerationConfig {
                     String str = StrUtil.replaceIgnoreCase(config.getParent(), StrUtil.DOT, "/");
                     builder.parent(config.getParent());//设置父、项目包名
                     customFiles.add(new CustomFile.Builder().fileName("Dto.java").templatePath("templates/boot/dto.java.vm")
-                            .filePath(StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("zksk-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "domain", config.getModelName())).packageName("dto").build());
+                            .filePath(StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("yanshen-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "domain", config.getModelName())).packageName("dto").build());
                     customFiles.add(new CustomFile.Builder().fileName("Vo.java").templatePath("templates/boot/vo.java.vm")
-                            .filePath(StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("zksk-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "domain", config.getModelName())).packageName("vo").build());
+                            .filePath(StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("yanshen-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "domain", config.getModelName())).packageName("vo").build());
                     //针对框架进行特定化处理
                     builder.entity(StrUtil.format("domain.{}", config.getModelName()))
                             .mapper(StrUtil.format("mapper.{}", config.getModelName()))
@@ -85,12 +85,12 @@ public class CodeGenerationConfig {
                             .serviceImpl(StrUtil.format("business.{}.impl", config.getModelName()))
                             .controller(StrUtil.format("web.controller.{}", config.getModelName()));
                     //获取项目前缀
-                    outputFileStringMap.put(OutputFile.entity, StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("zksk-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "domain", config.getModelName()));
-                    outputFileStringMap.put(OutputFile.mapper, StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("zksk-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "mapper", config.getModelName()));
-                    outputFileStringMap.put(OutputFile.xml, StrUtil.format("{}/{}/{}", (config.getProjectPrefix().equals("zksk-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getMybatis_path(), config.getModelName()));
-                    outputFileStringMap.put(OutputFile.service, StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("zksk-boot") ? StrUtil.format("{}/{}-business", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "business", config.getModelName()));
-                    outputFileStringMap.put(OutputFile.serviceImpl, StrUtil.format("{}/{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("zksk-boot") ? StrUtil.format("{}/{}-business", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "business", config.getModelName(), "impl"));
-                    outputFileStringMap.put(OutputFile.controller, StrUtil.format("{}/{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("zksk-boot") ? StrUtil.format("{}/{}-web", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "web", "controller", config.getModelName()));
+                    outputFileStringMap.put(OutputFile.entity, StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("yanshen-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "domain", config.getModelName()));
+                    outputFileStringMap.put(OutputFile.mapper, StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("yanshen-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "mapper", config.getModelName()));
+                    outputFileStringMap.put(OutputFile.xml, StrUtil.format("{}/{}/{}", (config.getProjectPrefix().equals("yanshen-boot") ? StrUtil.format("{}/{}-domain", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getMybatis_path(), config.getModelName()));
+                    outputFileStringMap.put(OutputFile.service, StrUtil.format("{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("yanshen-boot") ? StrUtil.format("{}/{}-business", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "business", config.getModelName()));
+                    outputFileStringMap.put(OutputFile.serviceImpl, StrUtil.format("{}/{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("yanshen-boot") ? StrUtil.format("{}/{}-business", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "business", config.getModelName(), "impl"));
+                    outputFileStringMap.put(OutputFile.controller, StrUtil.format("{}/{}/{}/{}/{}/{}", (config.getProjectPrefix().equals("yanshen-boot") ? StrUtil.format("{}/{}-web", config.getOutputDir(), config.getProjectPrefix()) : config.getOutputDir()), config.getProject_path(), str, "web", "controller", config.getModelName()));
                     builder.pathInfo(outputFileStringMap).build();
                 })
                 //模板配置-快速生成模式
@@ -238,16 +238,16 @@ public class CodeGenerationConfig {
                 .packageConfig(builder -> {
                     //设置包路径
                     Map<OutputFile, String> outputFileStringMap = new HashMap<>();
-                    outputFileStringMap.put(OutputFile.entity, config.getOutputDir() + "src/main/java/com/zksk/" + config.getModelName() + "/domain");
-                    outputFileStringMap.put(OutputFile.mapper, config.getOutputDir() + "src/main/java/com/zksk/" + config.getModelName() + "/mapper");
-                    outputFileStringMap.put(OutputFile.service, config.getOutputDir() + "src/main/java/com/zksk/" + config.getModelName() + "/service");
-                    outputFileStringMap.put(OutputFile.serviceImpl, config.getOutputDir() + "src/main/java/com/zksk/" + config.getModelName() + "/service/impl");
-                    outputFileStringMap.put(OutputFile.controller, config.getOutputDir() + "src/main/java/com/zksk/" + config.getModelName() + "/controller");
+                    outputFileStringMap.put(OutputFile.entity, config.getOutputDir() + "src/main/java/com/yanshen/" + config.getModelName() + "/domain");
+                    outputFileStringMap.put(OutputFile.mapper, config.getOutputDir() + "src/main/java/com/yanshen/" + config.getModelName() + "/mapper");
+                    outputFileStringMap.put(OutputFile.service, config.getOutputDir() + "src/main/java/com/yanshen/" + config.getModelName() + "/service");
+                    outputFileStringMap.put(OutputFile.serviceImpl, config.getOutputDir() + "src/main/java/com/yanshen/" + config.getModelName() + "/service/impl");
+                    outputFileStringMap.put(OutputFile.controller, config.getOutputDir() + "src/main/java/com/yanshen/" + config.getModelName() + "/controller");
                     outputFileStringMap.put(OutputFile.xml, config.getOutputDir() + "src/main/resources/mapper/");
                     customFiles.add(new CustomFile.Builder().fileName("Dto.java").templatePath("templates/cloud/dto.java.vm")
-                            .filePath(config.getOutputDir() + "src/main/java/com/zksk/" + config.getModelName() + "/domain").packageName("dto").build());
+                            .filePath(config.getOutputDir() + "src/main/java/com/yanshen/" + config.getModelName() + "/domain").packageName("dto").build());
                     customFiles.add(new CustomFile.Builder().fileName("Vo.java").templatePath("templates/cloud/vo.java.vm")
-                            .filePath(config.getOutputDir() + "src/main/java/com/zksk/" + config.getModelName() + "/domain").packageName("vo").build());
+                            .filePath(config.getOutputDir() + "src/main/java/com/yanshen/" + config.getModelName() + "/domain").packageName("vo").build());
                     builder.entity("domain")
                             .mapper("mapper")
                             .service("service")

@@ -1,8 +1,8 @@
-package com.zksk.generator;
+package com.cloud.generator;
 
 import com.baomidou.mybatisplus.generator.config.OutputFile;
-import com.zksk.generator.config.CodeGenerationConfig;
-import com.zksk.generator.config.ContextConfig;
+import com.cloud.generator.config.CodeGenerationConfig;
+import com.cloud.generator.config.ContextConfig;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.HashMap;
@@ -30,7 +30,7 @@ public class GeneratorApplication {
         //项目框架-默认单体项目（针对公司框架特定配置项，单体项目此像配置可以注释掉）
         config.setOsa("cloud");
         //项目前缀-用于针对单体模块可直接生成到指定模块下
-        config.setProjectPrefix("zksk-boot");
+        config.setProjectPrefix("yanshen-boot");
         //作者
         config.setAuthor("Yanshen");
         //前缀取消-用于进行生成时的表前缀取消,可以配置多个 格式：sys_
@@ -39,7 +39,7 @@ public class GeneratorApplication {
         config.setTablePrefixStr("");
         //按照前缀设置包名开关-默认关闭
         config.setPrefix(false);
-        //项目包路径 格式：com.zksk
+        //项目包路径 格式：com.yanshen
         config.setParent("com.yanshen");
         ////数据库类型 mysqlDb或达梦（dmDb） 暂时只支持这两种-可针对数据库类型进行数据源切换设置
         config.setDbType("mysqlDb");
