@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * 验证码处理
  *
- * @author zksk
+ * @author yanshen
  */
 public interface ValidateCodeService {
     /**

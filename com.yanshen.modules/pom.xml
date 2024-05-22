@@ -13,6 +13,7 @@
         <module>com.yanshen.mqlistener</module>
         <module>com.yanshen.messager</module>
         <module>com.yanshen.hotel</module>
+        <module>com.yanshen.admin</module>
     </modules>
 
 

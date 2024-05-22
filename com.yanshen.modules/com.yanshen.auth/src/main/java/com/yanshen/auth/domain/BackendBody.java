@@ -38,7 +38,7 @@ public class BackendBody {
      * 用户名
      */
     @ApiModelProperty(value = "用户名 grantType为password时必穿")
-    private String username;
+    private String userName;
 
     /**
      * 用户密码

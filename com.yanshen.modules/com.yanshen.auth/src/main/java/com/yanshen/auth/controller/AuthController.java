@@ -40,7 +40,7 @@ public class AuthController {
     @RequestMapping("/login")
     public R<?> auth(@RequestBody BackendBody loginBody) {
         LoginUser loginUser =new LoginUser();
-        log.info("尝试登录:{},{}", loginBody.getUsername(), loginBody.getPassword());
+        log.info("尝试登录:{},{}", loginBody.getUserName(), loginBody.getPassword());
         LoginUser login = loginService.login(loginBody);
         Map<String,Object> token = tokenService.createToken(login);
         return R.ok(token);

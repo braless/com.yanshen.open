@@ -96,7 +96,7 @@ public class LoginService {
      * 密码模式登录
      */
     private LoginUser passwordLogin(BackendBody form, String businessType) {
-        String username = form.getUsername();
+        String username = form.getUserName();
         String password = form.getPassword();
         // 登录业务类型为空 错误
         if (StringUtils.isBlank(businessType)) {
@@ -107,7 +107,7 @@ public class LoginService {
         // 登录业务类型为空 错误
         // 根据登录类型查询用户信息
         LoginUser loginUser=new LoginUser();
-        loginUser.setResourceIds("messager,auth");
+        loginUser.setResourceIds("messager,auth,admin");
         return loginUser;
     }
     /**

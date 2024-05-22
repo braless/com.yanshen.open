@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * 聚合系统接口
  *
- * @author zksk
+ * @author yanshen
  */
 @Primary
 @Component
@@ -54,8 +54,8 @@ public class SwaggerProvider implements SwaggerResourcesProvider, WebFluxConfigu
                         .contains(routeDefinition.getId()))
                 .forEach(routeDefinition -> routeDefinition.getPredicates().stream()
                         .filter(predicateDefinition -> "Path".equalsIgnoreCase(predicateDefinition.getName()))
-                        .filter(predicateDefinition -> !"zksk-auth".equalsIgnoreCase(routeDefinition.getId()))
-                        .filter(predicateDefinition -> !"zksk-job".equalsIgnoreCase(routeDefinition.getId()))
+                        .filter(predicateDefinition -> !"yanshen-auth".equalsIgnoreCase(routeDefinition.getId()))
+                        .filter(predicateDefinition -> !"yanshen-job".equalsIgnoreCase(routeDefinition.getId()))
                         .forEach(predicateDefinition -> resourceList
                                 .add(swaggerResource(routeDefinition.getId(), predicateDefinition.getArgs()
                                         .get(NameUtils.GENERATED_NAME_PREFIX + "0").replace("/**", SWAGGER2URL)))));
