@@ -3,7 +3,7 @@ package com.yanshen.common.core.exception;
 /**
  * 验证码错误异常类
  *
- * @author zksk
+ * @author yanshen
  */
 public class CaptchaException extends RuntimeException {
     private static final long serialVersionUID = 1L;

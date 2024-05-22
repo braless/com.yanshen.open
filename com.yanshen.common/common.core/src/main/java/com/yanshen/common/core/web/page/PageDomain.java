@@ -6,7 +6,7 @@ import com.yanshen.common.core.util.StringUtils;
 /**
  * 分页数据
  *
- * @author zksk
+ * @author yanshen
  */
 public class PageDomain {
     /**

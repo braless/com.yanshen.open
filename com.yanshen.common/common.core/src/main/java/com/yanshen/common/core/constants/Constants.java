@@ -124,7 +124,7 @@ public class Constants {
     /**
      * 定时任务白名单配置（仅允许访问的包名，如其他需要可以自行添加）
      */
-    public static final String[] JOB_WHITELIST_STR = {"com.zksk"};
+    public static final String[] JOB_WHITELIST_STR = {"com.yanshen"};
 
     /**
      * 通用状态-启用
@@ -140,5 +140,5 @@ public class Constants {
      * 定时任务违规的字符
      */
     public static final String[] JOB_ERROR_STR = {"java.net.URL", "javax.naming.InitialContext", "org.yaml.snakeyaml",
-            "org.springframework", "org.apache", "com.zksk.common.core.utils.file"};
+            "org.springframework", "org.apache", "com.yanshen.common.core.utils.file"};
 }

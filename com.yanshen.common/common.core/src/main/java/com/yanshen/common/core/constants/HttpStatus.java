@@ -3,7 +3,7 @@ package com.yanshen.common.core.constants;
 /**
  * 返回状态码
  *
- * @author zksk
+ * @author yanshen
  */
 public class HttpStatus {
     /**

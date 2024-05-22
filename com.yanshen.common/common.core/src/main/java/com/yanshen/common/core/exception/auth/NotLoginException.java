@@ -3,7 +3,7 @@ package com.yanshen.common.core.exception.auth;
 /**
  * 未能通过的登录认证异常
  *
- * @author zksk
+ * @author yanshen
  */
 public class NotLoginException extends RuntimeException {
     private static final long serialVersionUID = 1L;

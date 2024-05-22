@@ -9,7 +9,7 @@ import com.yanshen.common.security.domain.LoginUser;
 /**
  * Token 权限验证工具类
  *
- * @author zksk
+ * @author yanshen
  */
 public class AuthUtil {
     /**

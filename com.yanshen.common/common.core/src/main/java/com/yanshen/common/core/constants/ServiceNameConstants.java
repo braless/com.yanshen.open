@@ -20,44 +20,44 @@ public class ServiceNameConstants {
     /**
      * 系统模块的serviceid
      */
-    public static final String SYSTEM_SERVICE = "zksk-admin";
+    public static final String SYSTEM_SERVICE = "yanshen-admin";
 
     /**
      * 文件服务的serviceid
      */
-    public static final String FILE_SERVICE = "zksk-file";
+    public static final String FILE_SERVICE = "yanshen-file";
 
 
     /**
      * 门户服务的serviceid
      */
-    public static final String PORTAL_SERVICE = "zksk-portal";
+    public static final String PORTAL_SERVICE = "yanshen-portal";
 
     /**
      * 日志模块的serviceid
      */
-    public static final String LOG_SERVICE = "zksk-log";
+    public static final String LOG_SERVICE = "yanshen-log";
 
     /**
      * 渠道模块的serviceid
      */
-    public static final String CHANNEL_SERVICE = "zksk-channel";
+    public static final String CHANNEL_SERVICE = "yanshen-channel";
 
     /**
      * 信用风控的serviceid
      */
-    public static final String CREDITS_SERVICE = "zksk-credits";
+    public static final String CREDITS_SERVICE = "yanshen-credits";
 
     /**
      * 服务数据的serviceid
      */
-    public static final String DATA_SERVICE = "zksk-data";
+    public static final String DATA_SERVICE = "yanshen-data";
 
     /**
      * 消息服务器serviceid
      */
-    public static final String MESSAGE_SERVICE = "zksk-message";
+    public static final String MESSAGE_SERVICE = "yanshen-message";
 
-    public static final String BIAOXINTONG_SERVICE = "zksk-bxt";
+    public static final String BIAOXINTONG_SERVICE = "yanshen-bxt";
 
 }

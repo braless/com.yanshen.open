@@ -3,7 +3,7 @@ package com.yanshen.common.log.enums;
 /**
  * 操作状态
  *
- * @author zksk
+ * @author yanshen
  */
 public enum BusinessStatus {
     /**

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 /**
  * 异步调用日志服务
  *
- * @author zksk
+ * @author yanshen
  */
 @Service
 @Slf4j

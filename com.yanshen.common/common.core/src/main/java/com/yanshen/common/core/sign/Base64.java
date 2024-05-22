@@ -3,7 +3,7 @@ package com.yanshen.common.core.sign;
 /**
  * Base64工具类
  *
- * @author zksk
+ * @author yanshen
  */
 public final class Base64 {
     static private final int BASELENGTH = 128;

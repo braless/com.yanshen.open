@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 表格分页数据对象
  *
- * @author zksk
+ * @author yanshen
  */
 @ApiModel(value = "TableDataInfo", description = "表格分页数据对象")
 public class TableDataInfo implements Serializable {

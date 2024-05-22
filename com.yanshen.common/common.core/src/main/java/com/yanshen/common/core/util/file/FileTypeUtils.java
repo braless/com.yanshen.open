@@ -16,7 +16,7 @@ public class FileTypeUtils {
     /**
      * 获取文件类型
      * <p>
-     * 例如: zksk.txt, 返回: txt
+     * 例如: yanshen.txt, 返回: txt
      *
      * @param file 文件名
      * @return 后缀（不含".")
@@ -31,7 +31,7 @@ public class FileTypeUtils {
     /**
      * 获取文件类型
      * <p>
-     * 例如: zksk.txt, 返回: txt
+     * 例如: yanshen.txt, 返回: txt
      *
      * @param fileName 文件名
      * @return 后缀（不含".")

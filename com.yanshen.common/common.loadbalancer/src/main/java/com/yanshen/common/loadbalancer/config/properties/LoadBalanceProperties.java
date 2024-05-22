@@ -1,6 +1,6 @@
 package com.yanshen.common.loadbalancer.config.properties;
 
-import com.zksk.common.loadbalancer.enums.LoadBalancerTypeEnum;
+import com.yanshen.common.loadbalancer.enums.LoadBalancerTypeEnum;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

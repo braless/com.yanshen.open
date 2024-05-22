@@ -3,7 +3,7 @@ package com.yanshen.common.core.exception;
 /**
  * 内部认证异常
  *
- * @author zksk
+ * @author yanshen
  */
 public class InnerAuthException extends RuntimeException {
     private static final long serialVersionUID = 1L;

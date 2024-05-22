@@ -3,7 +3,7 @@ package com.yanshen.common.security.annotation;
 /**
  * 权限注解的验证模式
  *
- * @author zksk
+ * @author yanshen
  */
 public enum Logical {
     /**

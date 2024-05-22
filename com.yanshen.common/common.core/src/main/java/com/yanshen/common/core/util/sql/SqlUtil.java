@@ -7,7 +7,7 @@ import com.yanshen.common.core.util.StringUtils;
 /**
  * sql操作工具类
  *
- * @author zksk
+ * @author yanshen
  */
 public class SqlUtil {
     /**

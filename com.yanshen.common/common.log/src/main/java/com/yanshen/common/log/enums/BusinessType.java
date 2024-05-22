@@ -3,7 +3,7 @@ package com.yanshen.common.log.enums;
 /**
  * 业务操作类型
  *
- * @author zksk
+ * @author yanshen
  */
 public enum BusinessType {
     /**

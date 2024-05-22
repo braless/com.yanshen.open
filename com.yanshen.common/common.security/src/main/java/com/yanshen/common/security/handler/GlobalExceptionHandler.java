@@ -31,7 +31,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 全局异常处理器
  *
- * @author zksk
+ * @author yanshen
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -40,13 +40,13 @@ public class GlobalExceptionHandler {
     /**
      * 企业微信机器人通知地址
      */
-    @Value("${zksk.errorNotice.webhookUrl}")
+    @Value("${yanshen.errorNotice.webhookUrl}")
     private String webhookUrl;
 
     /**
      * 企业微信机器人通知-指定人员名单
      */
-    @Value("${zksk.errorNotice.phoneMode}")
+    @Value("${yanshen.errorNotice.phoneMode}")
     private String phoneMode;
 
     /**

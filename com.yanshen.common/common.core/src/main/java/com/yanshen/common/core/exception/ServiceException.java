@@ -3,7 +3,7 @@ package com.yanshen.common.core.exception;
 /**
  * 业务异常
  *
- * @author zksk
+ * @author yanshen
  */
 public final class ServiceException extends RuntimeException {
     private static final long serialVersionUID = 1L;

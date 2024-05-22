@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 权限认证：必须具有指定权限才能进入该方法
  *
- * @author zksk
+ * @author yanshen
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.TYPE})
