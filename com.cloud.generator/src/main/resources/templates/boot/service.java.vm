@@ -1,0 +1,80 @@
+package ${package.Service};
+
+import java.util.List;
+import ${package.Entity}.vo.${entity}Vo;
+import ${package.Entity}.dto.${entity}Dto;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.yanshen.common.core.web.page.PageQuery;
+
+/**
+ * $!{table.comment} 服务类
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+#if(${kotlin})
+interface ${table.serviceName} : ${superServiceClass}<${entity}>
+#else
+public interface ${table.serviceName} {
+
+    /**
+     * 查询$!{table.comment}列表-分页
+     *
+     * @param dto
+     * @return ${table.entityPath}集合
+     */
+    Page<${entity}Vo> queryPageList(${entity}Dto dto, PageQuery pageQuery);
+
+    /**
+     * 查询$!{table.comment}列表
+     *
+     * @param dto
+     * @return ${table.entityPath}集合
+     */
+    List<${entity}Vo> queryList(${entity}Dto dto);
+##开始循环判定当前数据表是否存在主键id，存在则生成根据id查询与删除的基本方法
+#foreach($field in ${table.fields})
+    #if(${field.keyFlag})
+    /**
+     * 查询$!{table.comment}
+     *
+     * @param ${field.propertyName} $!{table.comment}ID
+     * @return ${entity}Vo
+     */
+    ${entity}Vo select${entity}ById(${field.propertyType} ${field.propertyName});
+
+    /**
+     * 批量删除$!{table.comment}
+     *
+     * @param ${field.propertyName}s 需要删除的$!{table.comment}ID
+     * @return 结果
+     */
+    boolean delete${entity}ByIds(${field.propertyType}[] ${field.propertyName}s);
+
+    /**
+     * 删除$!{table.comment}信息
+     *
+     * @param ${field.propertyName} $!{table.comment}ID
+     * @return 结果
+     */
+    boolean delete${entity}ById(${field.propertyType} ${field.propertyName});
+    #end
+#end
+
+    /**
+     * 新增$!{table.comment}
+     *
+     * @param dto $!{table.comment}
+     * @return 结果
+     */
+    boolean insert${entity}(${entity}Dto dto);
+
+    /**
+     * 修改$!{table.comment}
+     *
+     * @param dto $!{table.comment}
+     * @return 结果
+     */
+    boolean update${entity}(${entity}Dto dto);
+    }
+#end

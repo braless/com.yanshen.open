@@ -1,0 +1,49 @@
+package ${package.Entity}.dto;
+
+import lombok.Data;
+
+import java.time.LocalDateTime;
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * $!{table.comment}Dto
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Data
+public class ${entity}Dto implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    ## ----------  BEGIN 字段循环遍历  ----------
+    #foreach($field in ${table.fields})
+        /**
+         * ${field.comment}
+         */
+        private ${field.propertyType} ${field.propertyName};
+    #end
+
+    /**
+     * 状态（0正常 1停用）
+     */
+    private String status;
+
+    /**
+     * 创建时间
+     */
+    private LocalDateTime createTime;
+
+    /**
+     * 乐观锁
+     */
+    private Integer version;
+
+    /**
+     * 请求参数
+     */
+    private Map<String, Object> params = new HashMap<>();
+    ## ----------  END 字段循环遍历  ----------
+}

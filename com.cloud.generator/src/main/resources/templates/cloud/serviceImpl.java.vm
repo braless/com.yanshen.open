@@ -1,0 +1,147 @@
+package ${package.ServiceImpl};
+
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import ${package.Entity}.${entity};
+import ${package.Entity}.vo.${entity}Vo;
+import ${package.Entity}.dto.${entity}Dto;
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import cn.hutool.core.bean.BeanUtil;
+import com.zksk.common.mybatisplus.core.page.PageQuery;
+import lombok.RequiredArgsConstructor;
+
+import java.util.*;
+/**
+ * $!{table.comment} 服务实现类
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Slf4j
+@Service
+@RequiredArgsConstructor
+public class ${table.serviceImplName} implements ${table.serviceName} {
+
+    private final ${table.mapperName} baseMapper;
+
+    /**
+     * 查询$!{table.comment}列表-分页
+     *
+     * @param dto $!{table.comment}
+     * @return ${entity.toLowerCase()}集合
+     */
+    @Override
+    public Page<${entity}Vo> queryPageList(${entity}Dto dto, PageQuery pageQuery) {
+        LambdaQueryWrapper<${entity}> lqw = buildQueryWrapper(dto);
+        Page<${entity}Vo> result = baseMapper.selectVoPage(pageQuery.build(), lqw);
+        return result;
+     }
+
+    /**
+     * 查询$!{table.comment}列表
+     *
+     * @param dto $!{table.comment}
+     * @return ${entity.toLowerCase()}集合
+     */
+    @Override
+    public List<${entity}Vo> queryList(${entity}Dto dto)
+        {
+        LambdaQueryWrapper<${entity}> lqw = buildQueryWrapper(dto);
+        return baseMapper.selectVoList(lqw);
+    }
+##开始循环判定当前数据表是否存在主键id，存在则生成根据id查询与删除的基本方法
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})
+    /**
+     * 查询$!{table.comment}
+     *
+     * @param ${field.propertyName} $!{table.comment}ID
+     * @return ${entity}Vo
+     */
+    @Override
+    public ${entity}Vo select${entity}ById(${field.propertyType} ${field.propertyName})
+    {
+        return baseMapper.selectVoById(${field.propertyName});
+    }
+
+    /**
+     * 批量删除$!{table.comment}
+     *
+     * @param ${field.propertyName}s 需要删除的$!{table.comment}ID
+     * @return 结果
+     */
+    @Override
+    public boolean delete${entity}ByIds(${field.propertyType}[] ${field.propertyName}s)
+    {
+        List<${field.propertyType}> ${field.propertyType.toLowerCase()}s = Arrays.asList(${field.propertyName}s);
+        return baseMapper.deleteBatchIds(${field.propertyType.toLowerCase()}s)>0;
+    }
+
+    /**
+     * 删除$!{table.comment}信息
+     *
+     * @param ${field.propertyName} $!{table.comment}ID
+     * @return 结果
+     */
+    @Override
+    public boolean delete${entity}ById(${field.propertyType} ${field.propertyName})
+    {
+        return baseMapper.deleteById(${field.propertyName})> 0;
+    }
+#end
+#end
+
+    /**
+     * 新增$!{table.comment}
+     *
+     * @param dto $!{table.comment}
+     * @return 结果
+     */
+    @Override
+    public boolean insert${entity}(${entity}Dto dto)
+    {
+        ${entity} add = BeanUtil.copyProperties(dto, ${entity}.class);
+        boolean flag = baseMapper.insert(add) > 0;
+        if (flag) {
+            if (add != null) {
+                //按需选择将id放入dto实体
+                //dto.setId(add.getId());
+            } else {
+                return false;
+            }
+        }
+        return flag;
+    }
+
+    /**
+     * 修改$!{table.comment}
+     *
+     * @param dto $!{table.comment}
+     * @return 结果
+     */
+    @Override
+    public boolean update${entity}(${entity}Dto dto)
+    {
+        ${entity} update = BeanUtil.copyProperties(dto, ${entity}.class);
+        return baseMapper.updateById(update)> 0;
+    }
+    /**
+     * 保存前的数据校验
+     */
+    private void validEntityBeforeSave(${entity} entity) {
+        //TODO 做一些数据校验,如唯一约束
+    }
+
+    /**
+     * 自定义查询条件，按照条件自己定义
+     */
+    private LambdaQueryWrapper<${entity}> buildQueryWrapper(${entity}Dto dto) {
+       Map<String, Object> params = dto.getParams();
+       LambdaQueryWrapper<${entity}> lqw = Wrappers.lambdaQuery();
+       return lqw;
+    }
+}
