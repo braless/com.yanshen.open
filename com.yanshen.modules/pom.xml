@@ -14,6 +14,7 @@
         <module>com.yanshen.messager</module>
         <module>com.yanshen.hotel</module>
         <module>com.yanshen.admin</module>
+        <module>com.yanshen.chat</module>
     </modules>
 
 

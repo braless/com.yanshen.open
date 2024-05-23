@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    inetutils:
+      preferred-networks: 192.168.1.
+    nacos:
+      discovery:
+        server-addr: ${DISCOVERY_SERVERADDR:192.168.1.129}:${DISCOVER_PORT:8848}
+        namespace: ${DISCOVERY_NAMESPACE:442ea6d7-dfe2-44bd-8d45-35d42370a89b}
+      config:
+        server-addr: ${CONFIG_SERVERADDR:192.168.1.129}:${CONFIG_PORT:8848}
+        namespace: ${CONFIG_NAMESPACE:442ea6d7-dfe2-44bd-8d45-35d42370a89b}
+        group: ${CONFIG_GROUP:DEFAULT_GROUP}
+        file-extension: yml
+        refresh-enabled: true
+        #共享配置
+        shared-configs:
+          - data-id: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+            group: ${spring.profiles.active}

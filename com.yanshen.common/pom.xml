@@ -19,6 +19,7 @@
         <module>common.datasource</module>
         <module>common.datasource.aop</module>
         <module>common.log</module>
+        <module>common.swagger3</module>
         <!--        <module>common.loadbalancer</module>-->
     </modules>
 

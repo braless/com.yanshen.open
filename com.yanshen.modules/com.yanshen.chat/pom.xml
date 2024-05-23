@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.yanshen</groupId>
-        <artifactId>com.yanshen.common</artifactId>
-        <version>${revision}</version>
+        <artifactId>com.yanshen.modules</artifactId>
+         <version>${revision}</version>
     </parent>
 
-    <artifactId>common.security</artifactId>
+    <artifactId>com.yanshen.chat</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,18 +17,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>com.yanshen</groupId>-->
-<!--            <artifactId>common.core</artifactId>-->
-<!--        </dependency>-->
+        <!-- SpringCloud Alibaba Nacos Config -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.yanshen</groupId>
-            <artifactId>common.redis</artifactId>
+            <artifactId>common.web</artifactId>
         </dependency>
-        <!-- Spring Web -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
+            <groupId>com.yanshen</groupId>
+            <artifactId>common.swagger3</artifactId>
         </dependency>
     </dependencies>
 

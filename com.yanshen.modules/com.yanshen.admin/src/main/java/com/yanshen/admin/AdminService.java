@@ -1,6 +1,7 @@
 package com.yanshen.admin;
 
 import com.yanshen.common.security.annotation.CustomConfig;
+import com.yanshen.common.swagger.annotation.EnableCustomSwagger2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -16,6 +17,7 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
 @CustomConfig
 @EnableFeignClients
 @EnableOpenApi
+@EnableCustomSwagger2
 public class AdminService {
     public static void main(String[] args) {
         SpringApplication.run(AdminService.class, args);

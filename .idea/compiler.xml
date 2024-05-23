@@ -23,23 +23,7 @@
           <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
           <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
         </processorPath>
-        <module name="com.yanshen.mqlistener" />
-        <module name="common.datasource.aop" />
-        <module name="common.log" />
-        <module name="com.yanshen.hotel" />
-        <module name="auth-clients" />
-        <module name="common.security" />
-        <module name="com.yanshen.gateway" />
-        <module name="common.core" />
-        <module name="com.yanshen.messager" />
-        <module name="common.redis" />
-        <module name="common.datasource" />
-        <module name="com.yanshen.auth" />
-        <module name="common.swagger" />
-        <module name="messager-clients" />
         <module name="common.sercurity" />
-        <module name="common.web" />
-        <module name="admin-clients" />
       </profile>
       <profile name="Annotation profile for com.yanshen.generator" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -51,7 +35,17 @@
           <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
           <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
         </processorPath>
+        <module name="common.redis" />
         <module name="com.yanshen.generator" />
+        <module name="common.datasource" />
+        <module name="common.swagger" />
+        <module name="common.datasource.aop" />
+        <module name="common.swagger3" />
+        <module name="common.log" />
+        <module name="common.web" />
+        <module name="common.security" />
+        <module name="com.yanshen.gateway" />
+        <module name="common.core" />
       </profile>
       <profile name="Annotation profile for com.yanshen.admin" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -64,6 +58,102 @@
           <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
         </processorPath>
         <module name="com.yanshen.admin" />
+      </profile>
+      <profile name="Annotation profile for com.yanshen.auth" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="com.yanshen.auth" />
+      </profile>
+      <profile name="Annotation profile for com.yanshen.chat" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="com.yanshen.chat" />
+      </profile>
+      <profile name="Annotation profile for com.yanshen.hotel" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="com.yanshen.hotel" />
+      </profile>
+      <profile name="Annotation profile for com.yanshen.messager" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="com.yanshen.messager" />
+      </profile>
+      <profile name="Annotation profile for com.yanshen.mqlistener" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="com.yanshen.mqlistener" />
+      </profile>
+      <profile name="Annotation profile for admin-clients" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="admin-clients" />
+      </profile>
+      <profile name="Annotation profile for auth-clients" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="auth-clients" />
+      </profile>
+      <profile name="Annotation profile for messager-clients" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc-scribe/0.15.0/therapi-runtime-javadoc-scribe-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/com/github/therapi/therapi-runtime-javadoc/0.15.0/therapi-runtime-javadoc-0.15.0.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../maven/repository/org/springframework/boot/spring-boot-configuration-processor/2.5.6/spring-boot-configuration-processor-2.5.6.jar" />
+        </processorPath>
+        <module name="messager-clients" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -80,6 +170,7 @@
       <module name="auth-clients" options="-parameters" />
       <module name="com.yanshen.admin" options="-parameters" />
       <module name="com.yanshen.auth" options="-parameters" />
+      <module name="com.yanshen.chat" options="-parameters" />
       <module name="com.yanshen.clients" options="-parameters" />
       <module name="com.yanshen.common" options="-parameters" />
       <module name="com.yanshen.gateway" options="-parameters" />
@@ -100,6 +191,7 @@
       <module name="common.security" options="-parameters" />
       <module name="common.sercurity" options="-parameters" />
       <module name="common.swagger" options="-parameters" />
+      <module name="common.swagger3" options="-parameters" />
       <module name="common.web" options="-parameters" />
       <module name="messager-clients" options="-parameters" />
     </option>

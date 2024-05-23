@@ -1,0 +1,11 @@
+server:
+  port: 3004
+spring:
+  application:
+    name: com.yanshen.chat
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    # 环境配置 dev uat prod
+    active: @spring.active@

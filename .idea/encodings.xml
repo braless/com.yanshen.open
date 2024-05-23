@@ -32,6 +32,9 @@
     <file url="file://$PROJECT_DIR$/com.yanshen.common/common.swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.common/common.swagger/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.common/common.swagger/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.swagger3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.swagger3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.common/common.swagger3/src/main/webapp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.common/common.web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.common/common.web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.common/common.web/src/main/webapp" charset="UTF-8" />
@@ -50,6 +53,9 @@
     <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.auth/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.auth/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.chat/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.chat/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.chat/src/main/webapp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/auth-clients/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/auth-clients/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.yanshen.modules/com.yanshen.clients/auth-clients/src/main/webapp" charset="UTF-8" />

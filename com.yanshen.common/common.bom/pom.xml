@@ -51,6 +51,12 @@
                 <artifactId>common.swagger</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!--Swagger3-->
+            <dependency>
+                <groupId>com.yanshen</groupId>
+                <artifactId>common.swagger3</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <!--Redis-->
             <dependency>
                 <groupId>com.yanshen</groupId>
